@@ -9,7 +9,7 @@ $.ajax({url: "https://ipapi.co/" + ip + "/json/",
      success: function(data) {
      var southWest = L.latLng(-89.98155760646617, -180),
 northEast = L.latLng(89.99346179538875, 180);
-     
+     var bounds = L.latLngBounds(southWest, northEast);
      var map = L.map('map', {
        center: bounds.getCenter(),
        maxBounds: bounds,
