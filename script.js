@@ -17,7 +17,9 @@ $.ajax({url: "https://ipapi.co/" + ip + "/json/",
        method: "POST"
      })
      $.getJSON("https://geostore.supremestdoggo.repl.co/", function(data) {
-  console.log(data);
+  for (let i = 0; i < data.length; i++) {
+    let marker = L.marker([data[i].latitude, data[i].longitude]).addTo(map);
+  }
 });
 }})
 })
