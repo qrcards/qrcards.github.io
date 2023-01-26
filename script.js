@@ -15,7 +15,7 @@ northEast = L.latLng(89.99346179538875, 180);
        maxBounds: bounds,
        maxBoundsViscosity: 1.0,
        minZoom: 1
-     }).setView([data.latitude, data.longitude], 13);
+     }).setView([data.latitude, data.longitude], 10);
      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
